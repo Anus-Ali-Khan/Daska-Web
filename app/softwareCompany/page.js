@@ -5,6 +5,7 @@ import Hell from "@/components/SoftwareCompany/Hell";
 import Review from "@/components/SoftwareCompany/Review";
 import Store from "@/components/SoftwareCompany/Store";
 import React from "react";
+import Custom from "../../components/SoftwareCompany/Custom";
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
         <Hell />
         <Review />
         <Store />
+        <Custom/>
       </div>
     </div>
   );
