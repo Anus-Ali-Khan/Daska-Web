@@ -6,6 +6,7 @@ import Review from "@/components/SoftwareCompany/Review";
 import Store from "@/components/SoftwareCompany/Store";
 import React from "react";
 import Custom from "../../components/SoftwareCompany/Custom";
+import Help from "@/components/SoftwareCompany/Help";
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
         <Review />
         <Store />
         <Custom/>
+        <Help/>
       </div>
     </div>
   );
