@@ -33,14 +33,14 @@ const Help = () => {
   };
 
   return (
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-full h-auto py-16">
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-full h-auto py-16 border-2">
       <div className="w-[90%] flex flex-col m-auto">
-        <h2 className="text-4xl font-semibold text-center leading-4  mb-8 ">Help & FAQ</h2>
+        <h2 className="mb-8 text-4xl font-semibold leading-4 text-center ">Help & FAQ</h2>
         <div className="space-y-4  flex items-center flex-col mt-[4rem]">
           {faqs.map((faq, index) => (
             <div key={index} className="bg-white p-4 rounded-lg shadow-sm w-[44rem] ">
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex items-center justify-between cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
                 <h3 className="text-lg font-medium text-[#351A5F]">{faq}</h3>
@@ -55,9 +55,9 @@ const Help = () => {
         </div>
       </div>
       {showModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
           <div className="bg-[#E8ECFD] p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3">
-            <h2 className="text-xl font-semibold mb-4">Details</h2>
+            <h2 className="mb-4 text-xl font-semibold">Details</h2>
             <p className="text-sm text-gray-700">{modalContent}</p>
             <button
               className="mt-6 px-4 py-2 bg-[#7F2EF8] text-white rounded-md"
