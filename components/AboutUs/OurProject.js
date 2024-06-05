@@ -7,7 +7,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const OurProject = () => {
   return (
     <>
-      <div className='w-[90%] mx-auto  h-[90vh] mt-10 flex gap-x-32 '>
+      <div className='w-[80%] mx-auto  h-[90vh] mt-10 flex gap-x-32 '>
             <div className=' left w-[50%]'>
                  <Image src={require("/public/p1-img-6.jpg") } 
         alt="Picture of the author" className='h-[80vh] w-half'/>

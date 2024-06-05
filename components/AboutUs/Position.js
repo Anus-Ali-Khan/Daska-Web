@@ -6,7 +6,7 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Position = () => {
   return (
     <>
-      <div className=' bg-gradient-to-r from-cyan-900 to-blue-500 w-[88%] mx-auto relative h-[60vh] rounded-2xl'>
+      <div className=' bg-gradient-to-r from-cyan-900 to-blue-500 w-[88%] mx-auto relative h-[70vh] rounded-2xl'>
         
             <Image src={one} className=' w-[100px] rounded-full p-[4px] bg-yellow-300 h-[100px]  left-24 flex absolute top-32 '/>
             <h1 className='absolute text-2xl font-bold text-white left-[30%] top-[50%]'>We are always looking for new talents <br /> who want to become part of our journey</h1>

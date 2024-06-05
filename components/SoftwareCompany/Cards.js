@@ -4,10 +4,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Cards = () => {
   return (
-    <div className="bg-white h-[100vh] w-[100vw] mt-[10rem] m-auto ">
+    <div className="bg-[#E8ECFD] h-[100vh] w-[100vw]  m-auto ">
       {/* cards */}
       {/* top */}
-      <div className="flex justify-around items-center p-auto  mr-[6rem] ml-[6rem] relative space-x-3">
+      <div className="flex justify-around items-center p-auto  mr-[6rem] ml-[6rem] relative space-x-3 ">
       
         <div className=" bg-slate-200 border border-slate-300 h-[24rem] w-[24rem] shadow-lg rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 p-3 flex flex-col justify-between ">
           <h1 className="flex justify-end text-[#351a5f] text-[16px] font-semibold mt-[3rem] mr-[2rem]">Settings</h1>
