@@ -5,14 +5,14 @@ import Animate from './Animate';
 
 const Front = () => {
   return (
-    <div className="bg-[#E8ECFD] flex justify-around items-center w-[100vw] h-[47rem] overflow-x-hidden">
-      <div className="w-[90%] flex justify-between items-center m-auto mb-[8rem] mt-[4rem]">
+    <div className="bg-[#E8ECFD] flex justify-around items-center w-[100vw] h-fit overflow-x-hidden ">
+      <div className=" flex justify-between items-center m-auto mb-[8rem] mt-[4rem]">
         {/* left div */}
-        <div className="flex flex-col font-bold gap-y-6 ml-[4rem]">
-          <div className='w-full'>
+        <div className="flex flex-col font-bold gap-y-6 ml-[4rem] ">
+          <div className='w-full '>
             <div className='font-medium text-5xl tracking-tighter leading-[4rem]'>
               <div>
-                <h1 className="text-[#351A5F]">
+                <h1 className="text-[#351A5F]  ">
                   Work with users and
                 </h1>
                 <h1 className="text-[#351A5F]">
@@ -45,7 +45,7 @@ const Front = () => {
         </div>
         {/* right div */}
         <div className="rounded-sm mt-[4rem] ">
-          <Image src={require("/public/webic1.png")} alt="Web Illustration" className="w-[44rem]" />
+          <Image src={require("/public/webic1.png")} alt="Web Illustration" className="w-[44rem] " />
         </div>
       </div>
     </div>
