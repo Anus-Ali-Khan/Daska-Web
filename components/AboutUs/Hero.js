@@ -5,8 +5,8 @@ import TextAnimation from './TypeAnimation'
 const Hero = () => {
   return (
    <>
-  <div className=' h-[80vh] flex justify-around mt-10 text-3xl m-auto w-[88%]'>
-      <div className=' left w-[40%] flex flex-col '>
+  <div className=' h-[80vh] flex justify-around mt-10 text-3xl m-auto w-[88%] max-sm:flex max-sm:flex-col'>
+      <div className=' left w-[40%] flex flex-col  max-sm:text-sm max-sm:w-[100%]'>
       <div className='flex flex-col gap-y-14 '>
         
 
@@ -18,9 +18,9 @@ const Hero = () => {
         <h1>design to <span className='text-[#9c3df5]'> code </span></h1> */}
         <TextAnimation />
         </div>
-        <div className='text-xl font-light text-gray-600'>
-        <p>Lorem mollis aliquam ut porttitor leo nequeas</p>
-        <p>gravida in fermentum et sollicitudin suis amet.</p>
+        <div className='text-xl font-light text-gray-700 max-sm:font-medium'>
+        <p>Lorem mollis aliquam ut porttitor leo nequeas
+        gravida in fermentum et sollicitudin suis amet.</p>
         </div>
         </div>
         </div>
@@ -31,8 +31,8 @@ const Hero = () => {
          
         </div>
 
-        <div className='flex justify-around'>
-        <div className='relative flex  w-[40%] justify-between items-center'>
+        <div className='flex justify-around '>
+        <div className='relative flex  w-[40%] justify-between items-center max-sm: max-sm:w-[100%]'>
         <div className='flex'>
         <Image src={require("/public/istockphoto-1437816897-170667a.webp") } 
         alt="Picture of the author" className='w-[60px] h-[60px] rounded-full' />
@@ -41,14 +41,18 @@ const Hero = () => {
         
         </div>
         <div >
-          <h1 className='text-lg text-slate-600'>356 Users</h1>
+          <h1 className='text-lg text-slate-600 max-sm:font-bold max-sm:text-sm'>356 Users</h1>
         </div>
         </div>
 
-        <div className='flex items-center gap-x-2 w-[38%] '>
+        <div className='flex items-center gap-x-2 w-[38%]  max-sm:hidden'>
+        
+        
           <h1 className='text-2xl font-medium tracking-tighter'>$11,897</h1>
           <h1 className='text-sm text-slate-600'>PER YEAR</h1>
+          
         </div>
+        
         </div>
         </div>
 
@@ -59,7 +63,7 @@ const Hero = () => {
         
         
       </div>
-      <div className=' w-[45%]'>
+      <div className=' w-[45%] '>
          <Image src={require("/public/p1-img-1 (1).jpg") } 
         alt="Picture of the author" className='w-[600px] rounded-xl' />
       </div>

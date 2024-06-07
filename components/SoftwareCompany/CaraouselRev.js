@@ -22,7 +22,7 @@ export default function CaraouselRev() {
   };
 
   return (
-    <div className="w-[40rem] h-[21rem] overflow-hidden ml-[24rem] ">
+    <div className="w-[46rem] h-[22rem] overflow-hidden ml-[24rem] ">
       <Slider {...settings}>
      
           <div>

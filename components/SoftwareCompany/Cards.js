@@ -2,7 +2,7 @@ import React from "react";
 import { FaHandshake } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Cards = () => {
+const Cards = () => {``
   return (
     <div className="bg-[#E8ECFD] h-[100vh] w-[100vw]  m-auto ">
       {/* cards */}
@@ -25,7 +25,7 @@ const Cards = () => {
 
       {/* bottom */}
       <div className="flex justify-center items-center mt-[4rem]   ">
-        <div className="bg-slate-200 border border-slate-300 shadow-lg w-[73rem] rounded-md flex justify-between items-center gap-x-2 p-4 backdrop-filter backdrop-blur-lg bg-opacity-30 ]">
+        <div className="bg-slate-200 border border-slate-300 shadow-lg w-[73rem]  rounded-md flex justify-between items-center gap-x-2 p-4 backdrop-filter backdrop-blur-lg bg-opacity-30 ]">
         <div className="flex items-center gap-x-2 ml-[24rem]">
         <FaHandshake  className="text-[#16031F] text-lg font-extrabold "/>
             <h6 className=" text-[#303043] ">we are hiring self-motivated to join us</h6>

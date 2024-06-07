@@ -1,73 +1,82 @@
-'use client'
+"use client";
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
 
 const Help = () => {
   const [activeIndex, setActiveIndex] = useState(null);
-  const [showModal, setShowModal] = useState(false);
-  const [modalContent, setModalContent] = useState('');
 
   const faqs = [
-    "Why this mobile app is the best solution for your business?",
-    "What can I learn from using this App?",
-    "What is the price of the App?",
-    "Which gadget can I upload on my App?",
-    "Why this mobile app is the best solution for your business?",
+    {
+      question: "Why this mobile app is the best solution for your business?",
+      answer:
+        "This app offers a comprehensive suite of features that streamline business operations, improve customer engagement, and provide valuable insights through analytics.",
+    },
+    {
+      question: "What can I learn from using this App?",
+      answer:
+        "You can learn how to manage your business more efficiently, track performance metrics, and leverage data to make informed decisions.",
+    },
+    {
+      question: "What is the price of the App?",
+      answer:
+        "The app is available at various pricing tiers to accommodate different business needs, starting from $9.99 per month.",
+    },
+    {
+      question: "Which gadget can I upload on my App?",
+      answer:
+        "You can upload a wide range of gadgets including smartphones, tablets, and smartwatches that are compatible with the app's requirements.",
+    },
+    {
+      question: "Why this mobile app is the best solution for your business?",
+      answer:
+        "This app integrates seamlessly with your existing systems, offers robust security features, and provides a user-friendly interface that enhances productivity.",
+    },
   ];
 
-  const detailedContent = "Lorem Ipsum estibulum blandit libero at mauris condime ntum males uada scelerisque in mauris ut malesuada.Nullam id dolor finibus, efficitur lorem ut, consequat nisl sit amet non ligula facilisis, ultrices ex sed mollis sem.";
-
   const handleToggle = (index) => {
-    if (activeIndex === index) {
-      setShowModal(!showModal);
-    } else {
-      setActiveIndex(index);
-      setModalContent(detailedContent);
-      setShowModal(true);
-    }
-  };
-
-  const handleCloseModal = () => {
-    setShowModal(false);
+    setActiveIndex(activeIndex === index ? null : index);
   };
 
   return (
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-full h-auto py-16 border-2">
+    // main
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-[100vw] h-[52rem] py-16">
       <div className="w-[90%] flex flex-col m-auto">
-        <h2 className="mb-8 text-4xl font-semibold leading-4 text-center ">Help & FAQ</h2>
-        <div className="space-y-4  flex items-center flex-col mt-[4rem]">
+        <h2 className="text-4xl font-normal text-center leading-4  mb-8 text-[Inter 500]">
+          Help & FAQ
+        </h2>
+        {/* boxes */}
+        <div className="space-y-5  flex items-center flex-col mt-[4rem] ">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-sm w-[44rem] ">
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-sm w-[45rem] "
+            >
+              {/* inside */}
               <div
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                <h3 className="text-lg font-medium text-[#351A5F]">{faq}</h3>
+                <h3 className="text-lg text-[Inter 500] font-medium text-[#351A5F]">
+                  {faq.question}
+                </h3>
+                {/* arrow */}
                 {activeIndex === index ? (
-                  <IoIosArrowUp className="w-6 h-6" />
+                  <IoIosArrowUp className="w-6 h-6 font-bold" />
                 ) : (
                   <FaChevronDown className="w-6 h-6" />
                 )}
               </div>
+              {/* dropdown */}
+              {activeIndex === index && (
+                <div className="mt-4 text-gray-700">
+                  <p className="text-sm">{faq.answer}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
       </div>
-      {showModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-[#E8ECFD] p-6 rounded-lg w-11/12 md:w-1/2 lg:w-1/3">
-            <h2 className="mb-4 text-xl font-semibold">Details</h2>
-            <p className="text-sm text-gray-700">{modalContent}</p>
-            <button
-              className="mt-6 px-4 py-2 bg-[#7F2EF8] text-white rounded-md"
-              onClick={handleCloseModal}
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

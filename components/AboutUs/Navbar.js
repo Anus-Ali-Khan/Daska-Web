@@ -66,7 +66,7 @@ const Navbar = () => {
       <h1>N</h1>
       <h1>.</h1>
             </div>
-            <div className='w-[400px] '>
+            <div className='w-[400px] max-sm:hidden '>
                 <ul className='flex justify-between font-medium border-emerald-300 text-slate-800 '>
                     <li className='cursor-pointer' onMouseEnter={() => handleHomeDiv('home')}
                     >Home</li>
@@ -79,8 +79,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className='flex items-center w-[150px]  border-black justify-around font-xl text-slate-800'>
-                <h3 className='text-lg font-medium '>Log in</h3>
-                <HiOutlineMenuAlt4 className='text-5xl text-blue-700 cursor-pointer' onClick={changeSidebar}/>
+                <h3 className='text-lg font-medium max-sm:hidden'>Log in</h3>
+                <HiOutlineMenuAlt4 className='text-5xl text-blue-700 cursor-pointer ' onClick={changeSidebar}/>
             </div>
       </div>
       

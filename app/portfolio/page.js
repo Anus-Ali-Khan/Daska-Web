@@ -49,7 +49,7 @@ const categories=[
 const page = () => {
   return (
     <>
-      <div className='w-[82%]  mx-auto mt-[70px] flex flex-wrap  justify-between'>
+      <div className='w-[82%]  mx-auto mt-[70px] flex flex-wrap  justify-between max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center'>
         {
             categories.map((category)=>{
                 return <>
