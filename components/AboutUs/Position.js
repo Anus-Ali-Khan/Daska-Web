@@ -6,21 +6,28 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const Position = () => {
   return (
     <>
-      <div className=' bg-gradient-to-r from-cyan-900 to-blue-500 w-[88%] mx-auto relative h-[70vh] rounded-2xl'>
-        
-            <Image src={one} className=' w-[100px] rounded-full p-[4px] bg-yellow-300 h-[100px]  left-24 flex absolute top-32 '/>
-            <h1 className='absolute text-2xl font-bold text-white left-[30%] top-[50%]'>We are always looking for new talents <br /> who want to become part of our journey</h1>
-            <Image src={one} className=' w-[100px] rounded-full p-[4px] bg-yellow-300 h-[100px]  right-24 flex absolute top-20 '/>
-            <Image src={one} className=' w-[100px] rounded-full p-[4px] bg-yellow-300 h-[100px]  right-48 flex absolute top-64 '/> 
-            <div className='absolute left-[34%] top-[80%] flex gap-x-5'>          
-              <button className='px-6 py-5 text-lg text-white bg-purple-800 rounded-xl'>Read More</button>
-           <div className='flex items-center text-white gap-x-2 '>
-           <p className='text-xl'>View Open Positions</p>
-           <FaLongArrowAltRight />
-           </div>
-
-           </div>
-           
+      <div className='bg-gradient-to-r from-cyan-900 to-blue-500 w-[88%] mx-auto relative h-[70vh] rounded-2xl mt-10 flex flex-col items-center justify-center'>
+        <div className='absolute hidden top-8 left-8 lg:block'>
+          <Image src={one} alt="Decorative image" className='w-[100px] h-[100px] rounded-full p-[4px] bg-yellow-300'/>
+        </div>
+        <div className='absolute hidden top-20 right-8 lg:block'>
+          <Image src={one} alt="Decorative image" className='w-[100px] h-[100px] rounded-full p-[4px] bg-yellow-300'/>
+        </div>
+        <div className='absolute hidden top-64 right-24 lg:block'>
+          <Image src={one} alt="Decorative image" className='w-[100px] h-[100px] rounded-full p-[4px] bg-yellow-300'/>
+        </div>
+        <h1 className='mx-auto text-2xl font-bold text-center text-white md:text-3xl lg:text-4xl'>
+          We are always looking for new talents <br /> who want to become part of our journey
+        </h1>
+        <div className='absolute flex flex-col items-center gap-5 bottom-10 md:flex-row'>
+          <button className='px-6 py-3 text-lg text-white bg-purple-800 rounded-xl max-sm:text-sm'>
+            Read More
+          </button>
+          <div className='flex items-center hidden text-white gap-x-2 md:flex'>
+            <p className='text-lg'>View Open Positions</p>
+            <FaLongArrowAltRight />
+          </div>
+        </div>
       </div>
     </>
   )

@@ -26,11 +26,11 @@ export default function CaraouselRev() {
   };
 
   return (
-    <div>
+    <div >
       <Slider {...settings}>
      
           {/* <div className="w-[50%] border"> */}
-
+    
          <PeopleSlider image={personOne}/>
           {/* </div> */}
           {/* <div className="w-[90%] border"> */}
@@ -38,7 +38,7 @@ export default function CaraouselRev() {
 
           {/* </div> */}
          <PeopleSlider image={personThree}/>
-        
+         
       
        
         
