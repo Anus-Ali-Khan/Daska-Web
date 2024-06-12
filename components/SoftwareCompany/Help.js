@@ -40,17 +40,17 @@ const Help = () => {
 
   return (
     // main
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-[100vw] h-[52rem] py-16">
-      <div className="w-[90%] flex flex-col m-auto">
-        <h2 className="text-4xl font-normal text-center leading-4  mb-8 text-[Inter 500]">
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-full min-h-screen py-16">
+      <div className="w-full max-w-screen-xl px-4">
+        <h2 className="text-4xl font-normal text-center leading-10 mb-8 text-[Inter 500]">
           Help & FAQ
         </h2>
         {/* boxes */}
-        <div className="space-y-5  flex items-center flex-col mt-[4rem] ">
+        <div className="space-y-5 flex flex-col">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-sm w-[45rem] "
+              className="bg-white p-6 rounded-lg shadow-sm w-full"
             >
               {/* inside */}
               <div

@@ -4,78 +4,58 @@ import Image from "next/image";
 import { MdVerified } from "react-icons/md";
 import CarouselHell from "@/components/SoftwareCompany/CarouselHell";
 
+// Static image imports
+import LeftImage from "/public/L.png";
+import RightImage from "/public/R.png";
+
 const Hell = () => {
   return (
-    <div className="bg-[#E8ECFD] w-[100vw] h-[59rem]  flex items justify-between flex-col">
+    <div className="bg-[#E8ECFD] w-full min-h-screen flex flex-col justify-between items-center lg:gap-[2rem]">
       {/* top */}
-      <div>
+      <div className="w-full flex flex-col lg:flex-row justify-center lg:justify-between items-center mt-[3rem] lg:mt-[6rem] px-4 lg:px-0 gap-4">
         {/* left */}
-        <div className="relative flex justify-between  mt-[6rem] ">
-          {/* <input type="text" className="bg-white w-[14rem] h-[2rem] z-20 relative mb-[4rem] ml-[13rem]"
-        />   */}
-          <div className="bg-[#E8ECFD] w-[12rem] h-[1rem] z-20 relative mb-[4rem] ml-[14rem]"></div>
+        <div className="relative flex flex-col lg:flex-row justify-center items-center w-full lg:w-auto">
+          <div className="hidden lg:block bg-[#E8ECFD] w-[12rem] h-[1rem] mb-[4rem] ml-[14rem]"></div>
           <Image
-            src={require("/public/L.png")}
-            className="h-[28rem] w-[14rem]  ml-[11rem] z-10 absolute"
+            src={LeftImage}
+            className="h-[15rem] lg:h-[28rem] w-[8rem] lg:w-[14rem] mb-[2rem] lg:mb-0"
+            alt="Left Image"
           />
           <Image
-            src={require("/public/R.png")}
-            className="h-[28rem] w-[15rem] mt-[4rem] ml-[27rem] absolute "
+            src={RightImage}
+            className="h-[15rem] lg:h-[28rem] w-[8rem] lg:w-[15rem] mt-[4rem] lg:mt-0 lg:ml-[2rem]"
+            alt="Right Image"
           />
         </div>
 
         {/* right */}
-        <div className="ml-[40rem] flex flex-col items-center justify-start ">
-          <div className="flex flex-col gap-3">
-            <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-              WORK WITH
-            </p>
-            <div className="">
-              <h2 className="text-[#351A5F] text-3xl font-bold text-[Inter 500]">
-                Software service for
-              </h2>
-              <h2 className="mb-[3rem] text-[#351A5F] text-3xl font-bold text-[Inter 500]">
-                your business.
-              </h2>
-            </div>
-            <div className="mb-[2rem]">
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                Lorem Ipsum estibulum blandit libero at mauris condime
-              </p>
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                ntummales uada scelerisque in mauris ut malesuada. Ute
-              </p>
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                littellus, luctus nec.
-              </p>
-            </div>
-          </div>
-          <div className=" flex flex-col px-4 gap-4 ml-[-13rem] justify-center ">
-            <div className="flex items-center gap-2 ">
-              <MdVerified className="text-[#822EF7] text-lg font-semibold" />
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                Digital strategy
-              </p>
+        <div className="w-full lg:w-[40%] flex flex-col items-center lg:items-start justify-start text-center lg:text-left mt-[2rem] lg:mt-0">
+          <p className="text-[#351A5F] text-sm font-semibold mb-2">WORK WITH</p>
+          <h2 className="text-[#351A5F] text-2xl lg:text-3xl font-bold mb-3">
+            Software service for your business.
+          </h2>
+          <p className="text-[#351A5F] text-sm font-semibold mb-4">
+            Lorem Ipsum estibulum blandit libero at mauris condimentum malesuada
+            scelerisque in mauris ut malesuada. Ute littellus, luctus nec.
+          </p>
+          <div className="flex flex-col gap-4 px-4 justify-center lg:justify-start">
+            <div className="flex items-center gap-2">
+              <MdVerified className="text-[#822EF7] text-lg" />
+              <p className="text-[#351A5F] text-sm font-semibold">Digital strategy</p>
             </div>
             <div className="flex items-center gap-2">
-              <MdVerified className="text-[#822EF7] text-lg font-semibold" />
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                Modernized prospecting
-              </p>
+              <MdVerified className="text-[#822EF7] text-lg" />
+              <p className="text-[#351A5F] text-sm font-semibold">Modernized prospecting</p>
             </div>
             <div className="flex items-center gap-2">
-              <MdVerified className="text-[#822EF7] text-lg font-semibold" />
-              <p className="text-[#351A5F] text-sm font-semibold text-[Inter 400]">
-                Digital strategy
-              </p>
+              <MdVerified className="text-[#822EF7] text-lg" />
+              <p className="text-[#351A5F] text-sm font-semibold">Digital strategy</p>
             </div>
           </div>
         </div>
       </div>
       {/* bottom */}
-
-      {/* Carousel */}
-      <div className="flex items-center justify-center mr-[4rem] mt-[2rem]">
+      <div className="w-full flex items-center justify-center mt-[2rem] px-4 lg:px-0">
         <CarouselHell />
       </div>
     </div>
