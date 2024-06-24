@@ -1,4 +1,5 @@
 
+import HeroSection from '@/components/HomePage/HeroSection'
 import React from 'react'
 // import page from "./AboutUs/page"
 import Contact from "../components/Contact/Contact"
