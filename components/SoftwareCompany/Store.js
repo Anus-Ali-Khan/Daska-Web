@@ -24,22 +24,18 @@ const Store = () => {
             </h1>
 
             {/* Store Buttons */}
-            <div className="flex items-center justify-center gap-8 mb-4 ml-[24rem]">
-              <div className="bg-black rounded-lg p-6 h-[4rem] w-[12rem] flex  items-center justify-between">
-                <div>
-                  <BiLogoPlayStore className="mb-2 text-2xl text-white" />
-                </div>
-                <div className="flex flex-col">
-                  <p className="text-sm text-white">Get it on</p>
-                  <h5 className="text-sm text-white">Play Store</h5>
+            <div className="flex items-center justify-center gap-8 mb-4 ml-[25rem] cursor-pointer">
+              <div className="bg-black rounded-lg p-4 h-[4rem] w-[10rem] flex items-center gap-8 ">
+                <BiLogoPlayStore className="text-2xl text-white  " />
+                <div className="flex flex-col  items-center">
+                  <p className="text-xs text-white ">Get it on</p>
+                  <h5 className="text-sm text-white ">Play Store</h5>
                 </div>
               </div>
-              <div className="bg-black rounded-lg p-6 h-[4rem] w-[12rem] flex  items-center justify-between">
-                <div>
-                  <FaApple className="mb-2 text-4xl text-white" />
-                </div>
-                <div className="flex-flex-xol">
-                  <p className="text-sm text-white">Get it on</p>
+              <div className="bg-black rounded-lg p-4 h-[4rem] w-[11rem] flex items-center gap-8 cursor-pointer">
+                <FaApple className="text-2xl text-white" />
+                <div className="flex flex-col items-center ">
+                  <p className="text-xs text-white">Get it on</p>
                   <h5 className="text-sm text-white">App Store</h5>
                 </div>
               </div>
