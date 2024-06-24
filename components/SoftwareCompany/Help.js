@@ -54,7 +54,7 @@ const Help = () => {
             >
               {/* inside */}
               <div
-                className="flex justify-between items-center cursor-pointer"
+                className="flex items-center justify-between cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
                 <h3 className="text-lg text-[Inter 500] font-medium text-[#351A5F]">
