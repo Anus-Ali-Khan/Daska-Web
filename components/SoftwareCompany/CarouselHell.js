@@ -18,41 +18,28 @@ export default function CarouselHell() {
   };
 
   return (
-    <div className="bg-[#E8ECFD] text-[#351A5F] w-full max-w-[80vw] overflow-x-hidden h-[19rem]">
+    <div className="bg-[#E8ECFD] text-[#351A5F] w-full max-w-[90vw] md:max-w-[80vw] lg:max-w-[70vw] overflow-x-hidden h-[19rem] mx-auto">
       <Slider {...settings}>
-        <div className="p-4 text-center">
-          <div className="flex justify-center gap-2 mb-4">
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
+        {[{
+          title: "Lorem Ipsum Te Amo",
+          position: "CEO at BECCA",
+        }, {
+          title: "Es Te Vosotros Siuu",
+          position: "HRO at BECCA",
+        }, {
+          title: "Muchas Gracias Efficion",
+          position: "HEC at BECCA",
+        }].map(({ title, position }, idx) => (
+          <div key={idx} className="p-4 text-center">
+            <div className="flex justify-center gap-2 mb-4">
+              {[...Array(5)].map((_, starIdx) => (
+                <LiaStarSolid key={starIdx} className="text-[#822EF7]" />
+              ))}
+            </div>
+            <h1 className="text-xl font-bold md:text-2xl lg:text-3xl">{title}</h1>
+            <p className="mt-2 text-xs md:text-sm lg:text-base">{position}</p>
           </div>
-          <h1 className="text-2xl lg:text-3xl font-bold">Lorem Ipsum Te Amo</h1>
-          <p className="mt-2 text-sm lg:text-base">CEO at BECCA</p>
-        </div>
-        <div className="p-4 text-center">
-          <div className="flex justify-center gap-2 mb-4">
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-          </div>
-          <h1 className="text-2xl lg:text-3xl font-bold">Es Te Vosotros Siuu</h1>
-          <p className="mt-2 text-sm lg:text-base">HRO at BECCA</p>
-        </div>
-        <div className="p-4 text-center">
-          <div className="flex justify-center gap-2 mb-4">
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-            <LiaStarSolid className="text-[#822EF7]" />
-          </div>
-          <h1 className="text-2xl lg:text-3xl font-bold">Muchas Gracias Efficion</h1>
-          <p className="mt-2 text-sm lg:text-base">HEC at BECCA</p>
-        </div>
+        ))}
       </Slider>
     </div>
   );

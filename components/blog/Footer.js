@@ -1,61 +1,70 @@
-import React from "react";
-import { FaFacebookF, FaSnapchatGhost } from "react-icons/fa";
-import { TiSocialTwitter } from "react-icons/ti";
-import { IoLogoYoutube } from "react-icons/io";
-import { AiFillInstagram } from "react-icons/ai";
+import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-900 text-white py-12 mt-12">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/4 mb-6">
-            <h3 className="text-lg font-semibold mb-2">Discover</h3>
-            <ul>
-              <li><a href="#" className="hover:underline">Contact</a></li>
-              <li><a href="#" className="hover:underline">Portfolio</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Our team</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 mb-6">
-            <h3 className="text-lg font-semibold mb-2">Learn</h3>
-            <ul>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Get in Touch</a></li>
-              <li><a href="#" className="hover:underline">FAQ</a></li>
-              <li><a href="#" className="hover:underline">Latest news</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 mb-6">
-            <h3 className="text-lg font-semibold mb-2">Products</h3>
-            <ul>
-              <li><a href="#" className="hover:underline">Shop</a></li>
-              <li><a href="#" className="hover:underline">Pricing</a></li>
-              <li><a href="#" className="hover:underline">Blog</a></li>
-              <li><a href="#" className="hover:underline">Landing</a></li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 mb-6">
-            <h3 className="text-lg font-semibold mb-2">Company</h3>
-            <ul>
-              <li><a href="#" className="hover:underline">About us</a></li>
-              <li><a href="#" className="hover:underline">Contact</a></li>
-              <li><a href="#" className="hover:underline">Reviews</a></li>
-              <li><a href="#" className="hover:underline">Services</a></li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex justify-between mt-8">
+    <footer className="py-10 pl-5 text-white bg-purple-900 md:flex md:text-center sm:">
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 max-sm:flex max-sm:flex-col ">
           <div>
-            <p>© 2023 Qode Interactive, All Rights Reserved</p>
+            <h2 className="mb-4 text-2xl font-bold">billic</h2>
+            <div className="mb-4">
+              <p className='lg:ml-3'>Download app for FREE</p>
+              <div className="flex mt-2 space-x-2 md:ml-14">
+                <button className="px-4 py-2 text-white bg-transparent border rounded">
+                  <i className="fab fa-apple"></i> App Store
+                </button>
+                <button className="px-4 py-2 text-white bg-transparent border rounded">
+                  <i className="fab fa-google-play"></i> Google Play
+                </button>
+              </div>
+              <p className="mt-2 ml-0 text-sm lg:ml-5">*Currently available in the U.S. and Canada</p>
+            </div>
           </div>
-          <div className="flex space-x-4 text-[17px] gap-2">
-            <TiSocialTwitter />
-            <FaFacebookF />
-            <IoLogoYoutube />
-            <AiFillInstagram />
-            <FaSnapchatGhost />
+          <div>
+            <h3 className="mb-4 text-lg font-semibold">Discover</h3>
+            <ul>
+              <li className="mb-2"><a href="#">Contact</a></li>
+              <li className="mb-2"><a href="#">Portfolio</a></li>
+              <li className="mb-2"><a href="#">Blog</a></li>
+              <li className="mb-2"><a href="#">Our team</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-4 text-lg font-semibold">Learn</h3>
+            <ul>
+              <li className="mb-2"><a href="#">Blog</a></li>
+              <li className="mb-2"><a href="#">Get in Touch</a></li>
+              <li className="mb-2"><a href="#">FAQ</a></li>
+              <li className="mb-2"><a href="#">Latest news</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="mb-4 text-lg font-semibold">Products</h3>
+            <ul>
+              <li className="mb-2"><a href="#">Shop</a></li>
+              <li className="mb-2"><a href="#">Pricing</a></li>
+              <li className="mb-2"><a href="#">Blog</a></li>
+              <li className="mb-2"><a href="#">Landing</a></li>
+            </ul>
+          </div>
+          {/* <div>
+            <h3 className="mb-4 text-lg font-semibold">Company</h3>
+            <ul>
+              <li className="mb-2"><a href="#">About us</a></li>
+              <li className="mb-2"><a href="#">Contact</a></li>
+              <li className="mb-2"><a href="#">Reviews</a></li>
+              <li className="mb-2"><a href="#">Services</a></li>
+            </ul>
+          </div> */}
+        </div>
+        <div className="pt-8 mt-8 text-center border-t border-gray-700">
+          <p className="text-sm">&copy; 2023 Qode Interactive, All Rights Reserved</p>
+          <div className="flex justify-center mt-4 space-x-4">
+            <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-instagram"></i></a>
+            <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-linkedin"></i></a>
+            <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-facebook"></i></a>
+            <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-twitter"></i></a>
+            <a href="#" className="text-gray-400 hover:text-white"><i className="fab fa-youtube"></i></a>
           </div>
         </div>
       </div>

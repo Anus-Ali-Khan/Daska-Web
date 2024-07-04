@@ -11,14 +11,14 @@ import { FaSnapchatGhost } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className="">
-      <div className="mt-12 w-11/12 lg:w-4/5 m-auto">
+      <div className="w-11/12 m-auto mt-12 lg:w-4/5">
         <hr className="w-full border-0.5 border-slate-400 rounded my-5 self-center flex justify-center" />
       </div>
       {/* MAIN */}
-      <div className="w-11/12 lg:w-4/5 m-auto gap-16 flex flex-col lg:flex-row justify-between mt-12 lg:mt-24">
+      <div className="flex flex-col justify-between w-11/12 gap-16 m-auto mt-12 lg:w-4/5 lg:flex-row lg:mt-24">
         {/* left */}
         <div className="w-full lg:w-3/4 border-r-0 lg:border-r-0.5 border-slate-500">
-          <h2 className="text-sm font-small text-white bg-purple-700 w-16 px-2 rounded-xl mb-6">
+          <h2 className="w-16 px-2 mb-6 text-sm text-white bg-purple-700 font-small rounded-xl">
             NEWS
           </h2>
 
@@ -30,15 +30,15 @@ const Hero = () => {
           </h3>
           <Caraousell />
           <section className="bg-[#2B0855] text-white py-12 px-6 lg:px-12 rounded-md mb-6 mt-12 lg:mt-24 w-full lg:w-11/12 h-[200px] flex justify-center flex-col">
-            <p className="text-[22px] self-center">
+            <p className="text-[22px] self-center max-sm:text-sm">
               “Company has been a huge part of helping me grow my business through organic search and content marketing.”
             </p>
             <span className="block mt-4 text-[15px]">
               Mark Johnson, CEO at Becca
             </span>
           </section>
-          <div className="bg-white w-full lg:w-11/12 mb-12 lg:mb-0">
-            <h2 className="text-sm font-small text-white bg-purple-700 w-16 px-2 rounded-xl mb-6">
+          <div className="w-full mb-12 bg-white lg:w-11/12 lg:mb-0">
+            <h2 className="w-16 px-2 mb-6 text-sm text-white bg-purple-700 font-small rounded-xl">
               NEWS
             </h2>
             <h1 className="text-2xl lg:text-[34px] font-medium">
@@ -48,7 +48,7 @@ const Hero = () => {
               by Anna Watson{" "}
               <span className="text-gray-400">FEBRUARY 3, 2023</span>
             </p>
-            <div className="rounded-lg overflow-hidden shadow-lg mt-10">
+            <div className="mt-10 overflow-hidden rounded-lg shadow-lg">
               <Image
                 src={require("/public/blog-img-2.jpg").default}
                 alt="Blog Image"
@@ -57,12 +57,12 @@ const Hero = () => {
             </div>
           </div>
           <section className="bg-[#7D78E0] text-white rounded-md mb-6 mt-10 w-full lg:w-11/12 h-[200px] flex justify-center flex-col">
-            <p className="text-[20px] self-center p-6 underline">
+            <p className="text-[20px] self-center p-6  max-sm:text-sm">
             NFT SOLVE THIS PROBLEM BYPROTECTING PATIENTS' SENSITIVE INFORMATION AND INFORMATION AND IMPORVING AND SECURITY
             </p>
           </section>
-          <div className="bg-white w-full lg:w-11/12 mb-12 lg:mb-0 mt-16">
-            <h2 className="text-sm font-small text-white bg-purple-700 w-16 px-2 rounded-xl mb-6 ">
+          <div className="w-full mt-16 mb-12 bg-white lg:w-11/12 lg:mb-0">
+            <h2 className="w-16 px-2 mb-6 text-sm text-white bg-purple-700 font-small rounded-xl ">
               NEWS
             </h2>
             <h1 className="text-2xl lg:text-[34px] font-medium">
@@ -72,7 +72,7 @@ const Hero = () => {
               by Anna Watson{" "}
               <span className="text-gray-400">FEBRUARY 3, 2023</span>
             </p>
-            <div className="rounded-lg overflow-hidden shadow-lg mt-10">
+            <div className="mt-10 mb-10 overflow-hidden rounded-lg shadow-lg">
               <Image
                 src={require("/public/blog-img-2.jpg").default}
                 alt="Blog Image"
@@ -88,11 +88,11 @@ const Hero = () => {
             <input
               type="text"
               placeholder="Search..."
-              className="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-600 w-full lg:w-36"
+              className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-purple-600 lg:w-36"
             />
             <button
               type="button"
-              className="px-4 py-2 bg-purple-700 text-white rounded-r-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
+              className="px-4 py-2 text-white bg-purple-700 rounded-r-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500"
             >
               Search
             </button>
@@ -100,7 +100,7 @@ const Hero = () => {
 
           {/* Card */}
           <div className="w-full lg:w-4/5 my-8 border bg-[#897BEC] h-[250px] rounded-lg overflow-hidden shadow-lg p-6 mt-8 lg:mt-[60px]">
-            <div className="rounded-full border-4 border-purple-200 overflow-hidden w-24 h-24 mx-auto mb-4">
+            <div className="w-24 h-24 mx-auto mb-4 overflow-hidden border-4 border-purple-200 rounded-full">
               <Image
                 src={require("/public/blog-img-1.jpg")}
                 width={96}
@@ -108,57 +108,57 @@ const Hero = () => {
                 alt="Blog"
               />
             </div>
-            <h3 className="text-center text-gray-100 font-semibold text-xl mb-2">
+            <h3 className="mb-2 text-xl font-semibold text-center text-gray-100">
               by Anna Watson
             </h3>
             <p className="text-center text-gray-100">Copywriter</p>
           </div>
 
           {/* Read Next Section */}
-          <aside className="mt-8 lg:mt-16 w-full lg:w-4/5">
-            <h2 className="text-lg font-bold mb-4 text-purple-900">
+          <aside className="w-full mt-8 lg:mt-16 lg:w-4/5">
+            <h2 className="mb-4 text-lg font-bold text-purple-900">
               Read next
             </h2>
             <ul>
               <li className="mb-8">
-                <a href="#" className="text-black-500 font-bold">
+                <a href="#" className="font-bold text-black-500">
                   6 Best Wireframing Tools for Designing Your Website
                 </a>
-                <div className="text-gray-500 mt-1">
+                <div className="mt-1 text-gray-500">
                   <span>by Anna Watson</span>
                   <span className="block"> FEBRUARY 23, 2023</span>
                 </div>
               </li>
               <hr className="w-full lg:w-2/3 border-0.5 border-slate-400 rounded my-5 self-center flex justify-center" />
               <li className="mb-8">
-                <a href="#" className="text-black-800 font-bold">
+                <a href="#" className="font-bold text-black-800">
                   Who Owns WordPress? WordPress Ownership
                 </a>
-                <div className="text-gray-500 mt-1">
+                <div className="mt-1 text-gray-500">
                   <span>by Anna Watson</span>
                   <span className="block"> FEBRUARY 23, 2023</span>
                 </div>
               </li>
             </ul>
 
-            <div className="bg-purple-100 p-4 rounded-lg mt-8 lg:mt-16 h-64 text-center">
-              <h3 className="text-purple-800 font-bold pt-6">Newsletter</h3>
-              <p className="text-gray-500 mb-4">Get latest news in inbox</p>
+            <div className="h-64 p-4 mt-8 text-center bg-purple-100 rounded-lg lg:mt-16">
+              <h3 className="pt-6 font-bold text-purple-800">Newsletter</h3>
+              <p className="mb-4 text-gray-500">Get latest news in inbox</p>
               <form className="flex flex-col">
                 <input
                   type="email"
                   placeholder="Email"
-                  className="p-2 rounded-md border border-gray-300 mb-4"
+                  className="p-2 mb-4 border border-gray-300 rounded-md"
                 />
-                <button className="bg-purple-800 text-white p-2 rounded-md">
+                <button className="p-2 text-white bg-purple-800 rounded-md">
                   Sign In
                 </button>
               </form>
             </div>
           </aside>
           {/* Sidebar */}
-          <div className="mb-6 mt-8 lg:mt-16">
-            <h2 className="text-lg font-bold mt-6 mb-5 text-purple-800">
+          <div className="mt-8 mb-6 lg:mt-16">
+            <h2 className="mt-6 mb-5 text-lg font-bold text-purple-800">
               Follow us
             </h2>
             <div className="flex space-x-4 text-[17px] gap-2">
@@ -170,8 +170,8 @@ const Hero = () => {
             </div>
           </div>
           {/* Categories */}
-          <div className="mb-16 mt-8 lg:mt-16">
-            <h2 className="text-lg font-bold mb-4 text-purple-800">
+          <div className="mt-8 mb-16 lg:mt-16">
+            <h2 className="mb-4 text-lg font-bold text-purple-800">
               Categories
             </h2>
             <ul className="space-y-2">
@@ -203,18 +203,18 @@ const Hero = () => {
             </ul>
           </div>
           {/* Promotional Card */}
-          <div className="bg-purple-100 p-4 rounded-lg w-full lg:w-4/5 h-80">
-            <h3 className="text-purple-800 font-bold mb-2 pt-7">
+          <div className="w-full p-4 bg-purple-100 rounded-lg lg:w-4/5 h-80 max-sm:mb-10">
+            <h3 className="mb-2 font-bold text-purple-800 pt-7">
               Up to 40% Off All Courses
             </h3>
-            <p className="text-gray-500 mb-4">Read more →</p>
-            <Image
+            <p className="mb-4 text-gray-500">Read more →</p>
+            {/* <Image
               src={require("/public/blog-img-1.jpg")}
               alt="Course Promo"
               width={300}
               height={200}
-              className="rounded-lg"
-            />
+              className="rounded-lg md:hidden"
+            /> */}
           </div>
         </div>
       </div>

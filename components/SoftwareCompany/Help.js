@@ -39,38 +39,33 @@ const Help = () => {
   };
 
   return (
-    // main
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-full min-h-screen py-16">
-      <div className="w-full max-w-screen-xl px-4">
-        <h2 className="text-4xl font-normal text-center leading-10 mb-8 text-[Inter 500]">
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-full min-h-screen py-8 lg:py-16">
+      <div className="w-full max-w-screen-xl px-4 lg:px-8">
+        <h2 className="mb-8 text-2xl font-normal leading-8 text-center lg:text-4xl lg:leading-10">
           Help & FAQ
         </h2>
-        {/* boxes */}
-        <div className="space-y-5 flex flex-col">
+        <div className="flex flex-col space-y-4 lg:space-y-5">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-lg shadow-sm w-full"
+              className="w-full p-4 bg-white rounded-lg shadow-sm lg:p-6"
             >
-              {/* inside */}
               <div
                 className="flex items-center justify-between cursor-pointer"
                 onClick={() => handleToggle(index)}
               >
-                <h3 className="text-lg text-[Inter 500] font-medium text-[#351A5F]">
+                <h3 className="text-base lg:text-lg font-medium text-[#351A5F]">
                   {faq.question}
                 </h3>
-                {/* arrow */}
                 {activeIndex === index ? (
-                  <IoIosArrowUp className="w-6 h-6 font-bold" />
+                  <IoIosArrowUp className="w-5 h-5 font-bold lg:w-6 lg:h-6" />
                 ) : (
-                  <FaChevronDown className="w-6 h-6" />
+                  <FaChevronDown className="w-5 h-5 lg:w-6 lg:h-6" />
                 )}
               </div>
-              {/* dropdown */}
               {activeIndex === index && (
                 <div className="mt-4 text-gray-700">
-                  <p className="text-sm">{faq.answer}</p>
+                  <p className="text-sm lg:text-base">{faq.answer}</p>
                 </div>
               )}
             </div>

@@ -5,10 +5,10 @@ import { FaLongArrowAltRight } from "react-icons/fa";
 const PeopleSlider = ({ image }) => {
   return (
     <>
-      <div className="w-[80%] h-auto md:h-[90vh] mx-auto mt-28 max-sm:w-[95%]">
+      <div className="w-[80%] h-auto md:h-[90vh] mx-auto mt-28 max-sm:w-[84%]">
         <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
-          <div className="left w-full md:w-[40%]">
-            <Image src={image} alt="Person Image" className="w-full rounded-2xl" />
+          <div className="left w-full md:w-[40%] ">
+            <Image src={image} alt="Person Image" className="w-full rounded-2xl " />
           </div>
           <div className="right w-full md:w-[50%] font-semibold text-center md:text-left">
             <div className="flex flex-col gap-y-5">

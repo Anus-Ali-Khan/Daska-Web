@@ -20,6 +20,15 @@ export default function CaraouselRev() {
     centerPadding: "1%", // Padding on the sides of centered slide
     responsive: [
       {
+        breakpoint: 1024, // Large devices (laptops)
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "1%",
+        },
+      },
+      {
         breakpoint: 768, // Medium devices (tablets, landscape phones)
         settings: {
           slidesToShow: 1,

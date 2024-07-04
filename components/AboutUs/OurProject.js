@@ -11,7 +11,7 @@ const OurProject = () => {
           <Image 
             src={require("/public/p1-img-6.jpg")} 
             alt="Picture of the author" 
-            className='h-auto md:h-[80vh] w-full rounded-lg'
+            className='h-auto md:h-[50vh] w-full rounded-lg'
           />
         </div>
         <div className='right w-full md:w-[50%] flex flex-col gap-y-8'>

@@ -11,9 +11,9 @@ const Contact = () => {
         objectFit="cover" 
         className="absolute inset-0 z-0"
       />
-      <div className="relative z-10 flex items-center justify-center h-full  bg-opacity-50 px-4 md:px-8">
-        <div className="text-center text-white max-w-screen-lg mx-auto">
-          <h1 className="text-lg md:text-xl lg:text-2xl font-bold mb-2 md:mb-4">
+      <div className="relative flex items-center justify-center h-full px-4 bg-opacity-50 md:px-8">
+        <div className="max-w-screen-lg mx-auto text-center text-white">
+          <h1 className="mb-2 text-lg font-bold md:text-xl lg:text-2xl md:mb-4">
             If you need information or <br /> support, feel free to contact us
           </h1>
         </div>

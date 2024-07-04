@@ -83,10 +83,10 @@ const Navbar = () => {
                 <Link href="/"><li className='cursor-pointer' 
                     >Home</li></Link>
                     <Link href="/aboutUs"><li className='cursor-pointer' 
-                    >Pages</li></Link>
+                    >About Us</li></Link>
                     <Link href="/portfolio"> <li className='cursor-pointer' >
                     Portfolio</li></Link>
-                   <Link href="/softwareCompany"><li className='cursor-pointer' >Shop</li></Link>
+                   <Link href="/softwareCompany"><li className='cursor-pointer' >Contact</li></Link>
                     <Link href="/blog"><li className='cursor-pointer' >Blog</li></Link>
                     
                 </ul>
@@ -237,7 +237,7 @@ const Navbar = () => {
             </div>
           <div> <RxCross1 className='text-5xl text-blue-700 cursor-pointer ' onClick={slider}/></div>
         </div>
-        <div className='relative flex flex-col p-6 text-black bg-white gap-y-3'>
+        <div className='relative flex flex-col p-6 text-black bg-white gap-y-3 z-[999] mt-4'>
         
         <Link href="/" onClick={slider}>
             <div className='flex items-center justify-between text-xl'>
@@ -248,7 +248,7 @@ const Navbar = () => {
            
            <Link href="/aboutUs" onClick={slider}> 
             <div className='flex items-center justify-between text-xl'>
-              <h1>Pages</h1>
+              <h1>About Us</h1>
               <PiGreaterThan />
             </div>
             </Link>
@@ -262,7 +262,7 @@ const Navbar = () => {
             
             <Link href="/softwareCompany" onClick={slider}>
             <div className='flex items-center justify-between text-xl'>
-              <h1>Shop</h1>
+              <h1>Contact us</h1>
               <PiGreaterThan />
             </div>
             </Link>

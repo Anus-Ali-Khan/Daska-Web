@@ -1,4 +1,3 @@
-// components/CarouselClientWrapper.js
 "use client"; // This directive will ensure the component is used as a client component
 import Image from "next/image";
 import React from "react";

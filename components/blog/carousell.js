@@ -22,11 +22,11 @@ export default function Caraousell() {
   };
 
   return (
-    <div className="w-[90%] h-[29rem] overflow-hidden mt-7">
+    <div className="w-[100%] h-[29rem] overflow-hidden mt-7">
       <Slider {...settings}>
      
           <div>
-          <div className="p-2">
+          <div className="p-">
             <Image
               src={require("/public/blog-img-1.jpg")}
               className="h-[15rem] w-[100vw] rounded-lg object-cover"
@@ -38,7 +38,7 @@ export default function Caraousell() {
         
       
         <div>
-        <div className="p-2">
+        <div className="p-">
             <Image
               src={require("/public/revtwo.webp")}
               className="h-[15rem] w-[100vw] rounded-lg object-cover"
@@ -50,7 +50,7 @@ export default function Caraousell() {
        
       <div>
         
-      <div className="p-2">
+      <div className="p-">
             <Image
               src={require("/public/revthree.webp")}
               className="h-[15rem] w-[100vw] rounded-lg object-cover"
@@ -62,7 +62,7 @@ export default function Caraousell() {
        
         
           <div>
-          <div className="p-2">
+          <div className="p-">
             <Image
               src={require("/public/revtwo.webp")}
               className="h-[15rem] w-[100vw] rounded-lg object-cover"

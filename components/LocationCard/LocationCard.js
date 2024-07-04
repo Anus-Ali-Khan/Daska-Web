@@ -1,17 +1,17 @@
 const LocationCard = ({ location, address, city, phone }) => {
     return (
-      <div className="bg-white border border-gray-300 rounded-lg p-6 m-4 flex flex-col justify-between w-80 h-48">
+      <div className="flex flex-col justify-between h-48 p-6 m-4 bg-white border border-gray-300 rounded-lg w-80">
         <div>
-          <h2 className="text-lg font-semibold mb-2">{location}</h2>
+          <h2 className="mb-2 text-lg font-semibold">{location}</h2>
           <p>{address}</p>
           <p>{city}</p>
         </div>
         <div className="flex items-center mt-4">
-          <span className="text-purple-500 mr-2">
+          <span className="mr-2 text-purple-500">
             {/* Location icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

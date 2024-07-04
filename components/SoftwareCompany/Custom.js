@@ -1,45 +1,47 @@
 import React from "react";
 import Image from "next/image";
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Custom = () => {
   return (
-    <div className="bg-[#E8ECFD] w-full min-h-screen flex flex-col lg:flex-row justify-around items-center overflow-x-hidden">
+    <div className="bg-[#E8ECFD] w-full min-h-screen flex flex-col lg:flex-row justify-around items-center overflow-x-hidden p-4 lg:p-8">
       {/* left */}
-      <div className="flex flex-col justify-center items-center lg:items-start p-8 lg:p-0">
-        <div className="text-[14px] leading-[17px] text-[#351A5F] text-xl font-semibold mb-4 lg:mr-0">
+      <div className="flex flex-col items-center p-4 lg:items-start lg:p-0">
+        <div className="text-[14px] leading-[17px] text-[#351A5F] text-xl mb-4 font-light">
           WORK WITH
         </div>
-        <div className="text-[#351A5F] text-4xl font-semibold tracking-normal text-center lg:text-left">
-          Customize Becca and turn your ideas into reality.
+        <div className="text-[#351A5F] text-2xl lg:text-4xl font-semibold tracking-normal text-center lg:text-left">
+          Customize Becca and turn your <br /> ideas into reality.
         </div>
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-4 mt-8 p-4 w-full">
+        <div className="flex flex-col items-center justify-between w-full gap-4 p-4 mt-8 lg:flex-row">
           <div className="text-[#351A5F] text-lg font-medium leading-4">Screen sharing</div>
-          <div className="text-[#351A5F] text-lg font-medium leading-4">Screen sharing</div>
+          <div className="text-[#351A5F] text-lg font-medium leading-4 max-sm:hidden">Screen sharing</div>
         </div>
-        <hr className="border-t-4 border-[#D5C1FB] w-full lg:w-auto" />
-        <div className="flex flex-col lg:flex-row justify-between items-start w-full mt-8 gap-2">
-          <div className="text-[#351A5F] p-4">
-            <ul className="list-disc pl-5 text-lg leading-1">
+        <hr className="h-[5px] border-purple-500 w-full lg:w-[600px]" />
+        <div className="flex flex-col items-start justify-between w-full gap-2 mt-8 lg:flex-row ">
+          <div className="text-[#351A5F]">
+            <ul className="flex flex-col pl-5 text-lg list-disc gap-y-2 max-sm:flex ">
               <li>Templates</li>
               <li>Knowledge Base</li>
               <li>Powerful metrics</li>
-              <li>Renewal discount</li>
             </ul>
           </div>
-          <div className="text-[#351A5F] p-4">
-            <ul className="list-disc pl-5 text-lg leading-1">
+          <div className="text-[#351A5F]">
+            <ul className="flex flex-col pl-5 text-lg list-disc gap-y-2">
               <li>Templates</li>
               <li>Knowledge Base</li>
               <li>Powerful metrics</li>
-              <li>Renewal discount</li>
             </ul>
           </div>
+        </div>
+        <div className="flex items-center pt-5 pl-4 text-purple-500 gap-x-3">
+          Start using Becca at ICloud.com <FaLongArrowAltRight className="text-3xl font-thin" />
         </div>
       </div>
 
       {/* right */}
-      <div className="flex justify-center items-center">
-        <Image src={require("/public/customR.png")} className="h-[32rem] lg:h-[auto]" />
+      <div className="flex items-center justify-center p-4 lg:p-0">
+        <Image src={require("/public/customR.png")} className="w-full h-auto max-w-xs lg:max-w-md" />
       </div>
     </div>
   );
