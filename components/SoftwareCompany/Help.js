@@ -2,9 +2,11 @@
 import React, { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { IoIosArrowUp } from "react-icons/io";
+import help from "../../public/help.png"
+import Image from "next/image";
 
 const Help = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const faqs = [
     {
@@ -39,8 +41,8 @@ const Help = () => {
   };
 
   return (
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-full min-h-screen py-8 lg:py-16">
-      <div className="w-full max-w-screen-xl px-4 lg:px-8">
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-full min-h-screen py-8 lg:py-16 lg:relative">
+      <div className="w-full max-w-screen-xl px-4 lg:px-52 lg:absolute lg:z-50">
         <h2 className="mb-8 text-2xl font-normal leading-8 text-center lg:text-4xl lg:leading-10">
           Help & FAQ
         </h2>
@@ -72,6 +74,7 @@ const Help = () => {
           ))}
         </div>
       </div>
+      <Image src={help} alt="help" className="absolute w-full h-full "/>
     </div>
   );
 };

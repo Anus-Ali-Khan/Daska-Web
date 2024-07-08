@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import { FaLongArrowAltRight } from "react-icons/fa";
 
+
+
 const Custom = () => {
   return (
     <div className="bg-[#E8ECFD] w-full min-h-screen flex flex-col lg:flex-row justify-around items-center overflow-x-hidden p-4 lg:p-8">
@@ -41,6 +43,10 @@ const Custom = () => {
 
       {/* right */}
       <div className="flex items-center justify-center p-4 lg:p-0">
+      {/* <Image src={curly} /> */}
+          {/* <Image src={require("/public/larki.jpg")} className="w-1/3 h-auto max-w-xs lg:max-w-md rounded-[500px]" /> */}
+        {/* <Image src={require("/public/h3-rev1-img-1-removebg-preview.png")} className="w-full h-auto max-w-xs lg:max-w-md" /> */}
+        <Image src={require("/public/customR.png")} className="w-full h-auto max-w-xs lg:max-w-md" />
         <Image src={require("/public/customR.png")} className="w-full h-auto max-w-xs lg:max-w-md" />
       </div>
     </div>

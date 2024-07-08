@@ -208,13 +208,13 @@ const Hero = () => {
               Up to 40% Off All Courses
             </h3>
             <p className="mb-4 text-gray-500">Read more →</p>
-            {/* <Image
+            <Image
               src={require("/public/blog-img-1.jpg")}
               alt="Course Promo"
               width={300}
               height={200}
-              className="rounded-lg md:hidden"
-            /> */}
+              className="rounded-lg md:hidden max-sm:hidden max-md:hidden"
+            />
           </div>
         </div>
       </div>

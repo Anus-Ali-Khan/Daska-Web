@@ -11,7 +11,7 @@ export default function CaraouselRev() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show only 1 slide
+    slidesToShow: 1.5, // Show only 1 slide
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,

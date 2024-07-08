@@ -3,9 +3,10 @@ import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Animate from './Animate';
 
+
 const Front = () => {
   return (
-    <div className="bg-[#E8ECFD] flex flex-col lg:flex-row justify-around items-center w-full h-fit overflow-x-hidden px-4 lg:px-8 py-8 lg:py-16">
+    <div className="bg-[#d2d9f8] flex flex-col lg:flex-row justify-around items-center w-full h-fit overflow-x-hidden px-4 lg:px-8 py-8 lg:py-16">
       <div className="flex flex-col items-center justify-between w-full max-w-screen-xl mx-auto mt-16 mb-16 lg:flex-row lg:mb-32 lg:mt-32 ">
         {/* left div */}
         <div className="flex flex-col px-4 font-bold gap-y-6 lg:ml-16 lg:w-1/2 lg:px-0">
@@ -43,9 +44,13 @@ const Front = () => {
           </div>
         </div>
         {/* right div */}
-        <div className="px-4 mt-8 rounded-sm lg:mt-0 lg:w-1/2 lg:px-0">
+        <div className="relative px-4 mt-8 rounded-sm lg:mt-0 lg:w-1/2 lg:px-0">
+        <Image src={require("/public/h3-rev1-img-1-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[250px] lg:ml-0 top-[-50px]  " />
           <Image src={require("/public/webic1.png")} alt="Web Illustration" className="w-full max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-2xl" />
+          <Image src={require("/public/h3-rev1-img-7-removebg-preview.png")} className="absolute lg:top-40 lg:left-[-80px] lg:w-[150px] " />
+
         </div>
+
       </div>
     </div>
   );

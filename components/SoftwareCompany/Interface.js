@@ -4,9 +4,11 @@ import CarouselClientWrapper from "./CarouselClientWrapper";
 
 const Interface = () => {
   return (
-    <div className="bg-[#16031F] min-h-screen w-full overflow-x-hidden m-auto">
+    <div className="bg-[#16031F] min-h-screen w-full overflow-x-hidden m-auto relative">
       {/* top */}
       <div>
+      <Image src={require("/public/h3-rev5-img-5-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[200px] lg:right-1 lg:top-[-40px] z-40" />
+
         <div className="flex flex-col items-center px-4 mt-16 space-y-3 text-center md:mt-24 lg:mt-36">
           <h1 className="text-2xl font-semibold text-white md:text-3xl">
             Why millions of entrepreneurs choose Becca

@@ -1,10 +1,13 @@
 import React from "react";
 import { FaHandshake } from "react-icons/fa6";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Image from "next/image";
 
 const Cards = () => {
   return (
-    <div className="bg-[#E8ECFD] min-h-[100vh] w-full m-auto p-4 lg:p-8">
+    <div className="bg-[#E8ECFD] min-h-[100vh] w-full m-auto p-4 lg:p-8 relative ">
+            <Image src={require("/public/h3-img-5__1_-removebg-preview.png")} className="absolute bottom-0 left-0 w-full" />
+
       {/* cards */}
       {/* top */}
       <div className="flex flex-col items-center justify-around space-y-4 lg:flex-row lg:space-y-0 lg:space-x-4">
@@ -15,7 +18,7 @@ const Cards = () => {
         ].map((text, index) => (
           <div
             key={index}
-            className="bg-slate-200 border border-slate-300 h-[20rem] lg:h-[24rem] w-full lg:w-[24rem] shadow-lg rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 p-3 flex flex-col justify-between"
+            className="bg-white opacity-80 border border-slate-300 h-[20rem] lg:h-[24rem] w-full lg:w-[24rem] shadow-lg rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 p-3 flex flex-col justify-between"
           >
             <h1 className="flex justify-end text-[#351a5f] text-[14px] lg:text-[16px] font-semibold mt-[1rem] lg:mt-[3rem] mr-[1rem] lg:mr-[2rem]">
               Settings

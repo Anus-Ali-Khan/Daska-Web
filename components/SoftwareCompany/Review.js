@@ -1,9 +1,10 @@
 import React from "react";
 import CaraouselRev from "@/components/SoftwareCompany/CaraouselRev";
+import { FaArrowRight } from "react-icons/fa";
 
 const Review = () => {
   return (
-    <div className="bg-[#E8ECFD] min-h-screen flex flex-col justify-between items-center p-6 lg:p-0">
+    <div className="bg-[#E8ECFD] min-h-screen flex  justify-between items-center p-6 lg:p-0 ">
       {/* left */}
       <div className="flex flex-col p-1 lg:ml-6 w-full lg:w-[27rem]">
         <div>
@@ -29,6 +30,9 @@ const Review = () => {
           <p className="text-[16px] text-[#351A5F] leading-[25px] font-[Inter 500] font-semibold mb-[1rem]">
             ntum males uada scelerisque in mauris ut malesuada.
           </p>
+          <p className="flex items-center text-purple-600 gap-x-1">Start using becca at ICloud.com 
+          <FaArrowRight className="text-purple-600" /></p>
+          
         </div>
       </div>
 
