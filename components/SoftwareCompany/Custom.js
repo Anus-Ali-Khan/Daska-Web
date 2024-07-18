@@ -13,7 +13,7 @@ const Custom = () => {
           WORK WITH
         </div>
         <div className="text-[#351A5F] text-2xl lg:text-4xl font-semibold tracking-normal text-center lg:text-left">
-          Customize Becca and turn your <br /> ideas into reality.
+        CUSTOMIZE AND TURN YOUR <br /> IDEAS INTO REALITY.
         </div>
         <div className="flex flex-col items-center justify-between w-full gap-4 p-4 mt-8 lg:flex-row">
           <div className="text-[#351A5F] text-lg font-medium leading-4">Screen sharing</div>
@@ -23,16 +23,16 @@ const Custom = () => {
         <div className="flex flex-col items-start justify-between w-full gap-2 mt-8 lg:flex-row ">
           <div className="text-[#351A5F]">
             <ul className="flex flex-col pl-5 text-lg list-disc gap-y-2 max-sm:flex ">
-              <li>Templates</li>
-              <li>Knowledge Base</li>
-              <li>Powerful metrics</li>
+              <li>Consultation and Idea Evaluation</li>
+              <li>Custom Software Development</li>
+              <li>User-Centric Approach</li>
             </ul>
           </div>
           <div className="text-[#351A5F]">
             <ul className="flex flex-col pl-5 text-lg list-disc gap-y-2">
-              <li>Templates</li>
-              <li>Knowledge Base</li>
-              <li>Powerful metrics</li>
+              <li>Testing and Quality Assurance</li>
+              <li>Deployment and Support</li>
+              <li>Continuous Improvement</li>
             </ul>
           </div>
         </div>

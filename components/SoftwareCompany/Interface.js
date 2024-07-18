@@ -7,14 +7,14 @@ const Interface = () => {
     <div className="bg-[#16031F] min-h-screen w-full overflow-x-hidden m-auto relative">
       {/* top */}
       <div>
-      <Image src={require("/public/h3-rev5-img-5-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[200px] lg:right-1 lg:top-[-40px] z-40" />
+      <Image src={require("/public/h3-rev5-img-5-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[200px] lg:right-1 lg:top-[-40px] z-40 md:hidden sm:hidden" />
 
         <div className="flex flex-col items-center px-4 mt-16 space-y-3 text-center md:mt-24 lg:mt-36">
           <h1 className="text-2xl font-semibold text-white md:text-3xl">
-            Why millions of entrepreneurs choose Becca
+          We have established strong connections with over 100 regional
           </h1>
           <h3 className="text-sm text-white md:text-base">
-            Lorem Ipsum estibulum blandit libero at mauris
+          brands thanks to our scalable and effective operations
           </h3>
         </div>
         {/* images */}
@@ -48,45 +48,45 @@ const Interface = () => {
         {/* sections */}
         <div className="flex flex-col items-start justify-around w-full mt-16 space-y-12 lg:flex-row lg:space-y-0 lg:space-x-12 lg:w-3/4">
           <div className="flex-1">
-            <h1 className="text-xl font-medium text-white">Integration</h1>
+            <h1 className="text-xl font-medium text-white">OUR VISION</h1>
             <div className="mt-4 space-y-2">
               <h3 className="text-base font-medium text-white md:text-lg">
-                Lorem ipsum dolor sit amet,
+              
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-                consectetur adipiscing elit.
+              Being the top software development and digital marketing company in Canada involves offering businesses cutting-edge
               </h3>
-              <h3 className="text-base font-medium text-white md:text-lg">
-                Ut elit tellus, luctus nec.
-              </h3>
+              {/* <h3 className="text-base font-medium text-white md:text-lg">
+              solutions and unrivalled knowledge to help them realize their full potential in digital marketing.
+              </h3> */}
             </div>
           </div>
           <div className="flex-1">
-            <h1 className="text-xl font-medium text-white">Management</h1>
+            <h1 className="text-xl font-medium text-white">Our Mission</h1>
             <div className="mt-4 space-y-2">
               <h3 className="text-base font-medium text-white md:text-lg">
-                Lorem ipsum dolor sit amet,
+              
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-                consectetur adipiscing elit.
+              We aim to offer clients comprehensive digital marketing and software development services, delivering customized,
               </h3>
-              <h3 className="text-base font-medium text-white md:text-lg">
-                Ut elit tellus, luctus nec.
-              </h3>
+              {/* <h3 className="text-base font-medium text-white md:text-lg">
+              high-quality solutions that drive measurable results and sustainable growth.
+              </h3> */}
             </div>
           </div>
           <div className="flex-1">
             <h1 className="text-xl font-medium text-white">Employee Training</h1>
             <div className="mt-4 space-y-2">
               <h3 className="text-base font-medium text-white md:text-lg">
-                Lorem ipsum dolor sit amet,
+              Our Mission
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-                consectetur adipiscing elit.
+              We aim to offer clients comprehensive digital marketing and software development services, delivering customized,
               </h3>
-              <h3 className="text-base font-medium text-white md:text-lg">
-                Ut elit tellus, luctus nec.
-              </h3>
+              {/* <h3 className="text-base font-medium text-white md:text-lg">
+              high-quality solutions that drive measurable results and sustainable growth.
+              </h3> */}
             </div>
           </div>
         </div>

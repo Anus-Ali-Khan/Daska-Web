@@ -11,16 +11,16 @@ export default function CaraouselRev() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1.5, // Show only 1 slide
+    slidesToShow: 1.5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: true,
-    centerMode: true, // Center the slides
-    centerPadding: "1%", // Padding on the sides of centered slide
+    centerMode: true,
+    centerPadding: "1%",
     responsive: [
       {
-        breakpoint: 1024, // Large devices (laptops)
+        breakpoint: 1024,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -29,7 +29,7 @@ export default function CaraouselRev() {
         },
       },
       {
-        breakpoint: 768, // Medium devices (tablets, landscape phones)
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -38,7 +38,7 @@ export default function CaraouselRev() {
         },
       },
       {
-        breakpoint: 480, // Small devices (portrait phones)
+        breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,

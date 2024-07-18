@@ -20,19 +20,19 @@ const Hell = () => {
             {/* <div className="hidden lg:block bg-[#E8ECFD] w-48 h-4 lg:mb-16"></div> */}
             <Image
               src={LeftImage}
-              className="w-48 mb-8 lg:h-auto lg:w-auto lg:mb-0"
+              className="w-auto mb-8 lg:h-auto lg:w-auto lg:mb-0 md:h-[40vh]"
               alt="Left Image"
             />
            
             
             <Image
               src={RightImage}
-              className="w-48 mt-16 h-60 lg:w-auto lg:h-auto lg:mt-0 lg:ml-8"
+              className="w-auto mt-16 h-60 lg:w-auto lg:h-auto lg:mt-0 lg:ml-8 md:h-[40vh] max-sm:hidden"
               alt="Right Image"
             />
              <Image
               src={message}
-              className="w-48 mb-8 lg:h-auto lg:w-auto lg:mb-0 lg:absolute lg:right-[-60px]"
+              className="w-48 mb-8 lg:h-auto lg:w-auto lg:mb-0 lg:absolute lg:right-[-60px] max-sm:hidden"
               alt="Left Image"
             />
           </div>
@@ -41,24 +41,24 @@ const Hell = () => {
           <div className="flex flex-col items-center w-full mt-8 text-center lg:w-2/5 lg:items-start lg:text-left lg:mt-0">
             <p className="text-[#351A5F] text-sm font-semibold mb-2">WORK WITH</p>
             <h2 className="text-[#351A5F] text-2xl lg:text-3xl font-bold mb-3">
-              Software service for your <br /> business.
+            INNOVATIVE APP CONCEPTS AND <br /> MONETIZATION SOFTWARE FOR CREATORS
             </h2>
             <p className="text-[#351A5F] text-sm lg:text-base font-semibold mb-4">
-              Lorem Ipsum estibulum blandit libero at mauris condimentum malesuada <br />
-              scelerisque in mauris ut malesuada. Ute littellus, luctus nec.
+            We provide innovative solutions for content creators, allowing them to focus on their craft while  <br />
+            we handle technical aspects of development and monetization..
             </p>
             <div className="flex flex-col gap-4 px-4 lg:px-0">
               <div className="flex items-center gap-2">
                 <MdVerified className="text-[#822EF7] text-lg" />
-                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Digital strategy</p>
+                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Cloud-Based Software Solutions</p>
               </div>
               <div className="flex items-center gap-2">
                 <MdVerified className="text-[#822EF7] text-lg" />
-                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Modernized prospecting</p>
+                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Custom Software Development</p>
               </div>
               <div className="flex items-center gap-2">
                 <MdVerified className="text-[#822EF7] text-lg" />
-                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Digital strategy</p>
+                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Enterprise Software Solutions</p>
               </div>
             </div>
           </div>
