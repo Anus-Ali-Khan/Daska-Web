@@ -7,7 +7,7 @@ const Interface = () => {
     <div className="bg-[#16031F] min-h-screen w-full overflow-x-hidden m-auto relative">
       {/* top */}
       <div>
-      <Image src={require("/public/h3-rev5-img-5-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[200px] lg:right-1 lg:top-[-40px] z-40 md:hidden sm:hidden" />
+      <Image src={require("/public/h3-rev5-img-5-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[200px] lg:right-1 lg:top-[180px] z-40  md:max-w-[150px] md:right-1 md:top-[200px] max-sm:w-[90px] max-sm:top-[190px]" />
 
         <div className="flex flex-col items-center px-4 mt-16 space-y-3 text-center md:mt-24 lg:mt-36">
           <h1 className="text-2xl font-semibold text-white md:text-3xl">

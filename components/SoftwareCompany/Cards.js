@@ -36,10 +36,10 @@ const Cards = () => {
   };
 
   return (
-    <div className="bg-[#E8ECFD] min-h-[100vh] w-full m-auto p-4 lg:p-8 relative">
+    <div className="bg-[#E8ECFD] min-h-[100vh] w-full m-auto p-4 lg:p-8 relative ">
       <Image
         src={require("/public/h3-img-5__1_-removebg-preview.png")}
-        className="absolute bottom-0 left-0 w-full max-sm:hidden md:hidden"
+        className="absolute bottom-0 left-0 w-full md:w-full md:h-3/4 max-sm:w-full max-sm:h-3/4"
         alt="Background Image"
       />
 

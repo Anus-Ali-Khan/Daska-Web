@@ -47,9 +47,9 @@ const Front = () => {
         </div>
         {/* right div */}
         <div className="relative px-4 mt-8 rounded-sm lg:mt-0 lg:w-1/2 lg:px-0">
-        <Image src={require("/public/h3-rev1-img-1-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[250px] lg:ml-0 top-[-50px] animate-bounce max-sm:hidden md:hidden" />
+        <Image src={require("/public/h3-rev1-img-1-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:max-w-[250px] lg:ml-0 top-[-50px] animate-bounce  md:max-w-[150px] md:ml-20 max-sm:max-w-[120px] max-sm:top-[5px]" />
           <Image src={require("/public/webic1.png")} alt="Web Illustration" className="w-full max-w-xs sm:max-w-md lg:max-w-lg xl:max-w-2xl " />
-          <Image src={require("/public/h3-rev1-img-7-removebg-preview.png")} className="absolute lg:top-40 lg:left-[-80px] lg:w-[150px] max-sm:hidden md:hidden" />
+          <Image src={require("/public/h3-rev1-img-7-removebg-preview.png")} className="absolute w-full h-auto max-w-xs lg:top-[300px] lg:max-w-[200px] lg:ml-0 md:top-[180px] animate-bounce max-sm:hidden md:max-w-[100px] md:ml-32" />
 
         </div>
 

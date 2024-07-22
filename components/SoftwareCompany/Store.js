@@ -6,7 +6,8 @@ import "./store.css";
 
 const Store = () => {
   return (
-    <div className="min-h-screen bg-[#E8ECFD] text-red-500">
+    <div className='bg-[#E8ECFD]'>
+    <div className="min-h-screen bg-[#E8ECFD] text-red-500 w-[94%] mx-auto ">
       <div className="flex flex-col items-center justify-center p-6 bg lg:flex-row lg:p-0 ">
         <div className="w-full mb-6 text-white bg-center bg-cover mobile lg:w-1/2 h-80 lg:h-auto lg:mb-0"></div>
         <div className="w-full p-4 text-black lg:w-1/2 lg:p-8">
@@ -64,6 +65,7 @@ const Store = () => {
           </div> */}
         </div>
       </div>
+    </div>
     </div>
   );
 };

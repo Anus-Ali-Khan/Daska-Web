@@ -143,9 +143,9 @@ const Help = () => {
   };
 
   return (
-    <div className="bg-[#E8ECFD] flex justify-center items-center w-full h-[180vh]  lg:relative  ">
-      <div className="w-full max-w-screen-xl px-4 lg:px-52 lg:absolute lg:z-50">
-        <h2 className="mb-8 text-2xl font-normal leading-8 text-center lg:text-4xl lg:leading-10">
+    <div className="bg-[#E8ECFD] flex justify-center items-center w-full lg:h-[180vh]  lg:relative   md:h-[100vh] max-sm:h-[130vh]">
+      <div className="absolute w-full max-w-screen-xl px-4 lg:px-52 lg:absolute lg:z-50 md:z-50 max-sm:absolute max-sm:z-50 ">
+        <h2 className="mb-8 text-2xl font-extrabold leading-8 text-center lg:text-4xl lg:leading-10">
           Help & FAQ
         </h2>
         <div className="flex flex-col space-y-4 lg:space-y-5">
@@ -176,7 +176,7 @@ const Help = () => {
           ))}
         </div>
       </div>
-      <Image src={help} alt="help" className="absolute w-full h-full md:hidden max-sm:hidden"/>
+      <Image src={help} alt="help" className="absolute w-full h-full md:h-full md:w-full max-sm:h-full max-sm:w-full max-sm:hidden"/>
     </div>
   );
 };
