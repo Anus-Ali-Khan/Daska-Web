@@ -39,7 +39,7 @@ const Cards = () => {
     <div className="bg-[#E8ECFD] min-h-[100vh] w-full m-auto p-4 lg:p-8 relative ">
       <Image
         src={require("/public/h3-img-5__1_-removebg-preview.png")}
-        className="absolute bottom-0 left-0 w-full md:w-full md:h-3/4 max-sm:w-full max-sm:h-3/4"
+        className="absolute bottom-0 left-0 w-full md:w-full md:h-3/4 max-sm:w-full max-sm:h-3/4 "
         alt="Background Image"
       />
 
@@ -65,9 +65,9 @@ const Cards = () => {
         ))}
       </Slider>
 
-      <div className="flex justify-center items-center mt-8 lg:mt-[4rem]">
-        <div className="bg-slate-200 border border-slate-300 shadow-lg w-full lg:w-[73rem] rounded-md flex flex-col lg:flex-row justify-between items-center p-4 lg:p-6 gap-y-2 lg:gap-y-0 backdrop-filter backdrop-blur-lg bg-opacity-30">
-          <div className="flex flex-col lg:flex-row items-center gap-x-2 lg:ml-[24rem] text-center lg:text-left">
+      <div className="flex justify-center items-center mt-8 lg:mt-[4rem] ">
+        <div className="bg-slate-200 border border-slate-300 shadow-lg w-full lg:w-[73rem] rounded-md flex flex-col lg:flex-row justify-between items-center p-4 lg:p-6 gap-y-2 lg:gap-y-0 backdrop-filter backdrop-blur-lg bg-opacity-30 sm:absolute sm:z-50">
+          <div className="flex flex-col lg:flex-row items-center gap-x-2 lg:ml-[24rem] text-center lg:text-left ">
             <FaHandshake className="text-[#16031F] text-lg font-extrabold" />
             <h6 className="text-[#303043]">Your Partner in Digital Growth</h6>
             <FaLongArrowAltRight className="text-[#7F2EF8] cursor-pointer text-xl hover:translate-x-1 transition-transform" />
