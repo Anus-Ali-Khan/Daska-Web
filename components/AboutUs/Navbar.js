@@ -23,7 +23,7 @@ const Navbar = () => {
   const [portfolio, setPortfolio] = useState(false);
   const [shop, setShop] = useState(false);
   const [blog, setBlog] = useState(false);
-  const [activeTab, setActiveTab] = useState('home')
+  const [activeTab, setActiveTab] = useState("home");
   const [sidebar, setSidebar] = useState(false);
 
   const [mobileMenu, setMobileMenu] = useState(false);
@@ -60,7 +60,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`relative max-sm:hidden ${activeTab == 'home' ? 'bg-[#d2d9f8]' : 'bg-[#fff]'}`}>
+      <div
+        className={`relative max-sm:hidden ${activeTab == "home" ? "bg-[#d2d9f8]" : "bg-[#fff]"}`}
+      >
         <div className="flex justify-around items-center h-[110px]">
           <div
             className={`flex items-center  bg-[#9c3df5] text-white h-full w-[90px]  text-4xl justify-center font-bold rounded-b-2xl shadow-gray-400 shadow-xl`}
@@ -72,20 +74,24 @@ const Navbar = () => {
           </div>
           <div className="w-[400px] max-sm:hidden ">
             <ul className="flex justify-between font-medium border-emerald-300 text-slate-800 ">
-              <Link href="/" onClick={()=>setActiveTab("home")}>
+              <Link href="/" onClick={() => setActiveTab("home")}>
                 <li className="cursor-pointer">Home</li>
               </Link>
-              <Link href="/aboutUs" onClick={()=>setActiveTab("about us")}>
-                <li className="cursor-pointer">About Us</li>
-              </Link>
-              <Link href="/portfolio" onClick={()=>setActiveTab("portfolio")}>
+              <Link href="/portfolio" onClick={() => setActiveTab("portfolio")}>
                 {" "}
-                <li className="cursor-pointer">Portfolio</li>
+                <li className="cursor-pointer">Services</li>
               </Link>
-              <Link href="/softwareCompany" onClick={()=>setActiveTab("contact")}>
+              <Link
+                href="/softwareCompany"
+                onClick={() => setActiveTab("contact")}
+              >
                 <li className="cursor-pointer">Contact</li>
               </Link>
-              <Link href="/blog" onClick={()=>setActiveTab("blog")}>
+              <Link href="/aboutUs" onClick={() => setActiveTab("about us")}>
+                <li className="cursor-pointer">About Us</li>
+              </Link>
+
+              <Link href="/blog" onClick={() => setActiveTab("blog")}>
                 <li className="cursor-pointer">Blog</li>
               </Link>
             </ul>

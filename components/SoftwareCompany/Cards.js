@@ -69,7 +69,7 @@ const Cards = () => {
         <div className="bg-slate-200 border border-slate-300 shadow-lg w-full lg:w-[73rem] rounded-md flex flex-col lg:flex-row justify-between items-center p-4 lg:p-6 gap-y-2 lg:gap-y-0 backdrop-filter backdrop-blur-lg bg-opacity-30 sm:absolute sm:z-50">
           <div className="flex flex-col lg:flex-row items-center gap-x-2 lg:ml-[24rem] text-center lg:text-left ">
             <FaHandshake className="text-[#16031F] text-lg font-extrabold" />
-            <h6 className="text-[#303043]">Your Partner in Digital Growth</h6>
+            <h6 className="text-[#303043]">Your Partners in Digital Growth</h6>
             <FaLongArrowAltRight className="text-[#7F2EF8] cursor-pointer text-xl hover:translate-x-1 transition-transform" />
           </div>
         </div>
