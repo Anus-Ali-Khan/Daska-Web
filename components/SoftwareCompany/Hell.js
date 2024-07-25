@@ -41,11 +41,14 @@ const Hell = () => {
           <div className="flex flex-col items-center w-full mt-8 text-center lg:w-2/5 lg:items-start lg:text-left lg:mt-0">
             <p className="text-[#351A5F] text-sm font-semibold mb-2">WORK WITH</p>
             <h2 className="text-[#351A5F] text-2xl lg:text-3xl font-bold mb-3">
-            INNOVATIVE APP CONCEPTS AND <br /> MONETIZATION SOFTWARE FOR CREATORS
+            COMPREHENSIVE SOFTWARE SERVICES <br /> FOR YOUR  
+BUSINESS
             </h2>
             <p className="text-[#351A5F] text-sm lg:text-base font-semibold mb-4">
-            We provide innovative solutions for content creators, allowing them to focus on their craft while  <br />
-            we handle technical aspects of development and monetization..
+            Our business software solutions are customized to fit your company's unique 
+requirements. We offer software that increases productivity and streamlines 
+business operations, from customer relationship management to inventory 
+management.
             </p>
             <div className="flex flex-col gap-4 px-4 lg:px-0">
               <div className="flex items-center gap-2">
@@ -59,6 +62,10 @@ const Hell = () => {
               <div className="flex items-center gap-2">
                 <MdVerified className="text-[#822EF7] text-lg" />
                 <p className="text-[#351A5F] text-sm lg:text-base font-semibold">Enterprise Software Solutions</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <MdVerified className="text-[#822EF7] text-lg" />
+                <p className="text-[#351A5F] text-sm lg:text-base font-semibold">E-commerce site audit</p>
               </div>
             </div>
           </div>

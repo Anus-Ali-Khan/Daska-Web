@@ -11,10 +11,12 @@ const Interface = () => {
 
         <div className="flex flex-col items-center px-4 mt-16 space-y-3 text-center md:mt-24 lg:mt-36">
           <h1 className="text-2xl font-semibold text-white md:text-3xl">
-          We have established strong connections with over 100 regional
+          Our Offerings Are Customized To Meet The Demands Of Your 
+Business
           </h1>
           <h3 className="text-sm text-white md:text-base">
-          brands thanks to our scalable and effective operations
+          We have established strong connections with over 100 regional brands thanks to 
+          our scalable and effective operations
           </h3>
         </div>
         {/* images */}
@@ -54,7 +56,9 @@ const Interface = () => {
               
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-              Being the top software development and digital marketing company in Canada involves offering businesses cutting-edge
+              Being the top software development and digital marketing company in Canada 
+involves offering businesses cutting-edge solutions and unrivalled knowledge to 
+help them realize their full potential in digital marketing
               </h3>
               {/* <h3 className="text-base font-medium text-white md:text-lg">
               solutions and unrivalled knowledge to help them realize their full potential in digital marketing.
@@ -68,7 +72,9 @@ const Interface = () => {
               
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-              We aim to offer clients comprehensive digital marketing and software development services, delivering customized,
+              We aim to offer clients comprehensive digital marketing and software development 
+services, delivering customized, high-quality solutions that drive measurable results
+and sustainable growth
               </h3>
               {/* <h3 className="text-base font-medium text-white md:text-lg">
               high-quality solutions that drive measurable results and sustainable growth.
@@ -79,10 +85,12 @@ const Interface = () => {
             <h1 className="text-xl font-medium text-white">Employee Training</h1>
             <div className="mt-4 space-y-2">
               <h3 className="text-base font-medium text-white md:text-lg">
-              Our Mission
+              We aim to offer clients comprehensive digital marketing and software development 
+services, delivering customized, high-quality solutions that drive measurable results
+and sustainable growth.
               </h3>
               <h3 className="text-base font-medium text-white md:text-lg">
-              We aim to offer clients comprehensive digital marketing and software development services, delivering customized,
+              {/* We aim to offer clients comprehensive digital marketing and software development services, delivering customized, */}
               </h3>
               {/* <h3 className="text-base font-medium text-white md:text-lg">
               high-quality solutions that drive measurable results and sustainable growth.

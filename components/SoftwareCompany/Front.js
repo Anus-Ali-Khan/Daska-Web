@@ -16,12 +16,12 @@ const Front = () => {
             <div className="font-medium text-2xl sm:text-3xl lg:text-4xl xl:text-5xl tracking-tighter leading-snug lg:leading-[4rem]">
               <div>
                 <h1 className="text-[#351A5F] lg:text-3xl lg:font-semibold lg:tracking-tighter lg:leading-[2rem] lg:leading-snug line-clamp-3  lg:text-3xl lg:font-bold ">
-                WELCOME TO OUR PREMIER 
+                WELCOME TO OUR PREMIER SOFTWARE 
                 </h1>
                 <h1 className="text-[#351A5F] lg:text-3xl lg:font-semibold lg:tracking-tighter lg:leading-[2rem] line-clamp-3 lg:leading-snug lg:font-bold">
                  DEVELOPMENT COMPANY IN CANADA
                 </h1>
-                <Animate />
+                {/* <Animate /> */}
               </div>
             </div>
           </div>

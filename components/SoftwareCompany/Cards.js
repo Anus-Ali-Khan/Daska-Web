@@ -47,10 +47,10 @@ const Cards = () => {
         {[
           "Web development",
           "Graphic designing",
-          "Website development",
           "SEO & content marketing",
           "Social media marketing",
           "Pay-per-click (PPC)",
+          "Mobile app development"
         ].map((text, index) => (
           <div key={index} className="p-2">
             <div className="bg-white opacity-80 border border-slate-300 h-[20rem] lg:h-[24rem] w-full shadow-lg rounded-lg backdrop-filter backdrop-blur-lg bg-opacity-30 p-3 flex flex-col justify-between">
