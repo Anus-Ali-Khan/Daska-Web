@@ -1,7 +1,3 @@
-
-
-
-
 import Cards from "@/components/SoftwareCompany/Cards";
 import Interface from "@/components/SoftwareCompany/Interface";
 import Front from "@/components/SoftwareCompany/Front";
@@ -18,15 +14,14 @@ const page = () => {
   return (
     <div>
       <div className="overflow-hidden">
-      
         <Front />
         <Cards />
         <Interface />
         <Hell />
         <Review />
         <Store />
-        <Custom/>
-        <Help/>
+        <Custom />
+        <Help />
       </div>
     </div>
   );
